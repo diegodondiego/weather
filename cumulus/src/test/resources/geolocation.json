@@ -1,0 +1,128 @@
+{
+	"response" : {
+		"version" : "0.1",
+		"termsofService" : "http://www.wunderground.com/weather/api/d/terms.html",
+		"features" : {
+			"geolookup" : 1
+		}
+	},
+	"location" : {
+		"type" : "INTLCITY",
+		"country" : "BZ",
+		"country_iso3166" : "BR",
+		"country_name" : "Brazil",
+		"state" : "",
+		"city" : "Rio de Janeiro",
+		"tz_short" : "BRT",
+		"tz_long" : "America/Sao_Paulo",
+		"lat" : "-22.900000",
+		"lon" : "-43.233299",
+		"zip" : "00000",
+		"magic" : "1",
+		"wmo" : "83746",
+		"l" : "/q/zmw:00000.1.83746",
+		"requesturl" : "global/stations/83746.html",
+		"wuiurl" : "http://www.wunderground.com/global/stations/83746.html",
+		"nearby_weather_stations" : {
+			"airport" : {
+				"station" : [ {
+					"city" : "Galeao",
+					"state" : "",
+					"country" : "Brazil",
+					"icao" : "SBGL",
+					"lat" : "-22.80890274",
+					"lon" : "-43.24364853"
+				}, {
+					"city" : "Galeao",
+					"state" : "",
+					"country" : "BZ",
+					"icao" : "SBGL",
+					"lat" : "-22.80890274",
+					"lon" : "-43.24364853"
+				}, {
+					"city" : "Rio de Janeiro",
+					"state" : "",
+					"country" : "BZ",
+					"icao" : "SBRJ",
+					"lat" : "-22.91046143",
+					"lon" : "-43.16313171"
+				}, {
+					"city" : "Afonsos",
+					"state" : "",
+					"country" : "BZ",
+					"icao" : "SBAF",
+					"lat" : "-22.87508392",
+					"lon" : "-43.38470840"
+				} ]
+			},
+			"pws" : {
+				"station" : [
+						{
+							"neighborhood" : "Cachambi / Meier",
+							"city" : "Rio De Janeiro",
+							"state" : "RIO DE JANEIRO",
+							"country" : "BRASIL",
+							"id" : "IRIODEJA30",
+							"lat" : -22.894382,
+							"lon" : -43.272720,
+							"distance_km" : 4,
+							"distance_mi" : 2
+						},
+						{
+							"neighborhood" : "Todos os Santos",
+							"city" : "Rio de Janeiro",
+							"state" : "Rio de Janeiro",
+							"country" : "BRAZIL",
+							"id" : "IRIODEJA18",
+							"lat" : -22.893965,
+							"lon" : -43.279770,
+							"distance_km" : 4,
+							"distance_mi" : 2
+						},
+						{
+							"neighborhood" : "Morro da Urca, RJ",
+							"city" : "Rio De Janeiro",
+							"state" : "RIO DE JANEIRO",
+							"country" : "BRAZIL",
+							"id" : "IRIODEJA19",
+							"lat" : -22.951147,
+							"lon" : -43.165424,
+							"distance_km" : 8,
+							"distance_mi" : 5
+						},
+						{
+							"neighborhood" : "Ipanema - Posto 9",
+							"city" : "Rio De Janeiro",
+							"state" : "ÉTAT DE RIO DE JANEIRO",
+							"country" : "BRAZIL",
+							"id" : "ITATDERI2",
+							"lat" : -22.986282,
+							"lon" : -43.207069,
+							"distance_km" : 9,
+							"distance_mi" : 5
+						},
+						{
+							"neighborhood" : "Vila Progesso, Pendotiba - Niteroi, RJ - Brasil",
+							"city" : "Niteroi",
+							"state" : "RIO DE JANEIRO",
+							"country" : "BRAZIL",
+							"id" : "IRIODEJA29",
+							"lat" : -22.908020,
+							"lon" : -43.042980,
+							"distance_km" : 19,
+							"distance_mi" : 11
+						}, {
+							"neighborhood" : "Niteroi",
+							"city" : "Niteroi",
+							"state" : "RJ",
+							"country" : "BRAZIL",
+							"id" : "IRJNITER4",
+							"lat" : -22.946165,
+							"lon" : -43.031887,
+							"distance_km" : 21,
+							"distance_mi" : 12
+						} ]
+			}
+		}
+	}
+}
