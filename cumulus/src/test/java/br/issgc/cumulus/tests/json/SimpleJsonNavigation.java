@@ -10,8 +10,10 @@ import static org.junit.Assert.assertTrue;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
+import java.util.Set;
 
 import javax.script.Invocable;
+import javax.script.ScriptContext;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
@@ -52,13 +54,18 @@ public class SimpleJsonNavigation {
 	public void simpleEval() throws ScriptException {
 
 		StringBuilder builder = new StringBuilder();
-		builder.append("var teste = eval('(");
+		builder.append("var test = eval('(");
 		builder.append(rawSimpleJson.replaceAll("\\n", ""));
 		builder.append(")')");
 
 		jsEngine.eval(builder.toString());
 
-		Object json = jsEngine.eval("teste.field1");
+		// validates if the scope variable 'test' was created with the json
+		// valuess
+		Set<String> createdObjects = jsEngine.getBindings(ScriptContext.ENGINE_SCOPE).keySet();
+		assertTrue(createdObjects != null && createdObjects.contains("test"));
+
+		Object json = jsEngine.eval("test.field1");
 
 		assertTrue(json != null && json instanceof String && "value".equals(json));
 
