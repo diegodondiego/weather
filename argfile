@@ -1,0 +1,6 @@
+-processor org.checkerframework.checker.nullness.NullnessChecker
+-AsuppressWarnings=purity.invalid.overriding
+-Alint
+-AprintErrorStack
+-Awarns
+-Xmaxwarns 10000
