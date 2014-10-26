@@ -30,6 +30,7 @@ import br.issgc.weather.cumulus.json.NavigationByDot;
 public class GetForescastForRio extends Access {
 
 	/**
+	 * retrieve forecast @ wundergound and eval as JS and return the forecast
 	 * 
 	 * @throws ClientProtocolException
 	 * @throws IOException
