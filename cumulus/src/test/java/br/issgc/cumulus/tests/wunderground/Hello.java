@@ -3,22 +3,18 @@
  * @CC 2014
  * 
  */
-package br.issgc.cumulus.tests.firstssteps;
+package br.issgc.cumulus.tests.wunderground;
 
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.Properties;
 
-import org.apache.commons.lang3.StringUtils;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -28,24 +24,7 @@ import org.junit.Test;
  * @author dinhego
  *
  */
-public class HelloWunderground {
-
-	private final String API_END_POINT = "http://api.wunderground.com/api/";
-
-	private String apiKey;
-
-	@Before
-	public void loadAPIKEY() throws IOException {
-
-		InputStream apiConfiguraion = this.getClass().getClassLoader().getResourceAsStream("wunderground.properties");
-
-		Properties configurationProperties = new Properties();
-		configurationProperties.load(apiConfiguraion);
-
-		apiKey = (String) configurationProperties.get("api.key");
-		assertTrue(!StringUtils.isEmpty(apiKey));
-
-	}
+public class Hello extends Access {
 
 	/**
 	 * testing geolocation
@@ -81,7 +60,7 @@ public class HelloWunderground {
 	 * @throws IOException
 	 */
 	@Test
-	public void cariocaConditions() throws ClientProtocolException, IOException {
+	public void uberloveConditions() throws ClientProtocolException, IOException {
 
 		StringBuilder builder = new StringBuilder();
 
