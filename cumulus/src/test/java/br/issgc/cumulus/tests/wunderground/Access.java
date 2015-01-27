@@ -13,7 +13,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.junit.Before;
 
 /**
- * 
+ * Getting the api key through a properties file at classpath.
  * 
  * @author dinhego
  *
