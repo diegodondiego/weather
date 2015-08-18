@@ -2,3 +2,5 @@ language: java
 jdk:
   - oraclejdk8
 script: "mvn install -DskipTests=true"
+notifications:
+  slack: issgc:SyQOFhDdDX6LvlTON8xRx7eT
